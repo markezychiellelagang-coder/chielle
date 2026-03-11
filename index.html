@@ -1,0 +1,168 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>My Bio | Home Page</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    width:100%;
+    height:100vh;
+    overflow-x:hidden;
+    background-color:black;
+    color:white;
+}
+
+/* HEADER */
+
+header{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    padding:15px 20px;
+    background-color:transparent;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    z-index:100;
+}
+
+.logo{
+    font-size:2rem;
+    color:red;
+    font-weight:800;
+    cursor:pointer;
+    transition:0.5s ease;
+    text-decoration:none;
+}
+
+.logo:hover{
+    transform:scale(1.1);
+}
+
+/* NAVIGATION */
+
+nav a{
+    font-size:1rem;
+    color:white;
+    margin-left:20px;
+    font-weight:500;
+    text-decoration:none;
+    transition:0.3s ease;
+    border-bottom:3px solid transparent;
+}
+
+nav a:hover,
+nav a.active{
+    color:red;
+    border-bottom:3px solid red;
+}
+
+/* HOME SECTION */
+
+.home{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    gap:30px;
+    padding-top:120px;
+    text-align:center;
+}
+
+.home-img{
+    border-radius:50%;
+}
+
+.home-img img{
+    width:200px;
+    border-radius:50%;
+    box-shadow:0 0 25px red;
+    cursor:pointer;
+    transition:0.3s linear;
+}
+
+.home-img img:hover{
+    transform:scale(1.05);
+}
+
+.home-content h1{
+    font-size:2.5rem;
+    font-weight:700;
+}
+
+span{
+    color:red;
+}
+
+.home-content h3{
+    font-size:1.2rem;
+    margin-bottom:20px;
+    font-weight:700;
+}
+
+.home-content p{
+    max-width:400px;
+    font-size:0.95rem;
+    line-height:1.6;
+}
+
+   </style>
+
+    </head>
+
+ <body>
+
+   <header>
+
+<a href="#" class="logo">Mark</a>
+
+<nav>
+<a href="Home.html" class="active">Home</a>
+<a href="Contact.html">Contact</a>
+<a href="Aboutme.html">About</a>
+<a href="Gallery.html">Gallery</a>
+
+</nav>
+
+   </header>
+
+   <section class="home">
+
+<div class="home-img">
+<img src="Images/image4.jpg" alt="Profile Image">
+ </div>
+
+ <div class="home-content">
+
+  <h1>Hi, It's <span>Mark</span></h1>
+
+   <h3 class="typing-text">I'm a <span>Student</span></h3>
+
+ <p>
+Grade 11 ICT student learning about coding and trying to build this simple Bio Website.
+I'm from 11 Stewardship, someone "nobody" inside the classroom. I'm not much of an
+interesting guy because I prefer solitude and peace. Like what other says, doing things alone
+is sometimes better than trying to fit where you don't belong.
+  </p>
+
+   </div>
+
+   </section>
+
+   </body>
+</html>
